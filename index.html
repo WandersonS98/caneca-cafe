@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caneca de café</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="janela-mac">
+    <div class="barra-topo">
+      <span class="botao-fechar"></span>
+      <span class="botao-minimizar"></span>
+      <span class="botao-maximizar"></span>
+    </div>
+
+    <div class="conteudo-janela">
+      <h2>☕️ Primeiro o café, depois as tarefas ✌️</h2>
+      <h5>☕️ "Desperte para suas metas com um café e um sorriso."</h5>
+
+      <img id="coffeeImage" src="./img/coffee.png" alt="Imagem de Café">
+      <p id="programmingQuote"></p>
+      <img id="corinthiansLogo" src="./img/CP1910.png" alt="Símbolo do Corinthians">
+
+      <br><br>
+      <p class="Nome">Wanderson</p>
+      <p class="Ano">01-09-1910</p>
+
+      <img class="academia" src="https://cdn-icons-png.flaticon.com/128/489/489860.png" alt="academia">
+      <img class="filmes" src="https://cdn-icons-png.flaticon.com/512/3658/3658993.png" alt="filmes e series">
+      <img class="dinheiro" src="https://cdn-icons-png.flaticon.com/512/126/126230.png" alt="dinheiro">
+      <img class="controle-symbol" src="https://logosmarcas.net/wp-content/uploads/2020/11/Xbox-Logo.png" alt="xbox">
+      <img class="futebol-symbol" src="https://lagoa3cantos.rs.gov.br/wp-content/uploads/sites/9/2017/01/Jogador-de-Futebol-1.png" alt="futebol">
+      <img class="React" src="img/react.png" alt="React">
+      <img class="Apple" src="https://cdn4.iconfinder.com/data/icons/logos-3/560/apple-black-512.png" alt="Apple">
+      <img class="offline" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chromium_T-Rex-error-offline.svg/1024px-Chromium_T-Rex-error-offline.svg.png" alt="offline">
+      <!-- <img class="fechar" src="img/fechar1.png" alt="fechar"> -->
+      <img class="vs" src="img/vs.png" alt="vs">
+      <img class="JS" src="img/JS.png" alt="JS">
+      <img class="rede" src="img/rede.png" alt="rede">
+    </div>
+  </div>
+
+  <script>
+    function displayContent() {
+      const quotes = [
+        `Doutor, eu não me engano, meu coração é Corinthiano 
+        <img class='corinthians-symbol' src='./img/SCCP.png' alt='Símbolo do Corinthians'>`
+      ];
+
+      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById('programmingQuote').innerHTML = randomQuote;
+    }
+
+    displayContent();
+  </script>
+</body>
+
+</html>
